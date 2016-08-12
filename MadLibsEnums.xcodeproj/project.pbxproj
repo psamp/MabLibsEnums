@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74F447DA1D5E1D3100BB88A2 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 74F447D91D5E1D3100BB88A2 /* main.c */; };
+		74F447E31D5E20FC00BB88A2 /* Word.c in Sources */ = {isa = PBXBuildFile; fileRef = 74F447E11D5E20FC00BB88A2 /* Word.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +26,8 @@
 /* Begin PBXFileReference section */
 		74F447D61D5E1D3100BB88A2 /* MadLibsEnums */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = MadLibsEnums; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F447D91D5E1D3100BB88A2 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		74F447E11D5E20FC00BB88A2 /* Word.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = Word.c; sourceTree = "<group>"; };
+		74F447E21D5E20FC00BB88A2 /* Word.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Word.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				74F447D91D5E1D3100BB88A2 /* main.c */,
+				74F447E11D5E20FC00BB88A2 /* Word.c */,
+				74F447E21D5E20FC00BB88A2 /* Word.h */,
 			);
 			path = MadLibsEnums;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F447DA1D5E1D3100BB88A2 /* main.c in Sources */,
+				74F447E31D5E20FC00BB88A2 /* Word.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
