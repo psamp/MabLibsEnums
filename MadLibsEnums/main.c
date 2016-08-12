@@ -7,9 +7,14 @@
 //
 
 #include <stdio.h>
+#include "IntakeOutput.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+    
+    char name[30] = {[0 ... 29] = '\0'};
+    
+    getWordFromUser(name, "What's your name? 30 characters or less.\n\n", 30);
+    printf("Hello, %s. We're going to play Madlibs.", name);
+    
     return 0;
 }
