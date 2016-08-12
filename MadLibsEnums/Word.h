@@ -17,13 +17,13 @@ typedef enum {
     WordAdjOrange,
     WordNounEmpanadas,
     WordNounPizza,
-    WordNounSalda,
+    WordNounSalad,
     WordVerbExercise,
     WordVerbGame,
     WordVerbSing
 
 }Word;
 
-void wordToString(Word word);
+void wordToString(Word word, char *destination);
 
 #endif /* Word_h */
