@@ -14,7 +14,7 @@ void getWordFromUser(char *destination, char prompt[], int wordMaxLength) {
     int numberOfItemsScanned = 0;
     unsigned long stringLength = 0;
     
-    while (numberOfItemsScanned != 1 || stringLength <= 0 & stringLength <= wordMaxLength) {
+    while (numberOfItemsScanned != 1 || (stringLength <= 0 || stringLength > wordMaxLength)) {
         printf("%s", prompt);
         fpurge(stdin);
         
