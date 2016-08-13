@@ -12,18 +12,28 @@
 #include <stdio.h>
 
 typedef enum {
-    WordAdjGreen,
-    WordAdjRed,
-    WordAdjOrange,
-    WordNounEmpanadas,
-    WordNounPizza,
-    WordNounSalad,
-    WordVerbExercise,
-    WordVerbGame,
-    WordVerbSing
+    Green,
+    Red,
+    Orange
+    
+}Adjective;
 
-}Word;
+typedef enum {
+    Empanadas,
+    Pizza,
+    Salad
+    
+}Noun;
 
-void wordToString(Word word, char *destination);
+typedef enum {
+    Exercise,
+    Game,
+    Sing
+    
+}Verb;
+
+char* AdjToString(Adjective adj);
+char* NounToString(Noun noun);
+char* VerbToString(Verb verb);
 
 #endif /* Word_h */

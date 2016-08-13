@@ -8,47 +8,62 @@
 
 #include "Word.h"
 
-void wordToString(Word word, char *destination) {
-    
-    switch (word) {
-        case WordAdjRed: {
-            destination = "red";
+
+char* AdjToString(Adjective adj) {
+    switch (adj) {
+        case Green: {
+            return "green";
             break;
         }
-        case WordAdjGreen: {
-            destination = "green";
+        case Red: {
+            return "red";
             break;
         }
-        case WordAdjOrange: {
-            destination = "orange";
+        case Orange: {
+            return "orange";
             break;
         }
-        case WordNounEmpanadas: {
-            destination = "empanadas";
+    }
+}
+
+char* NounToString(Noun noun) {
+    switch (noun) {
+        case Empanadas: {
+            return "empanadas";
             break;
         }
-        case WordNounPizza: {
-            destination = "pizza";
+        case Pizza: {
+            return "pizza";
             break;
         }
-        case WordNounSalad: {
-            destination = "salad";
-            break;
-        }
-        case WordVerbSing: {
-            destination = "sing";
-            break;
-        }
-        case WordVerbGame: {
-            destination = "game";
-            break;
-        }
-        case WordVerbExercise: {
-            destination = "exercise";
+        case Salad: {
+            return "salad";
             break;
         }
         default:
-            destination = NULL;
+            return NULL;
             break;
     }
+    
+}
+
+char* VerbToString(Verb verb) {
+    switch (verb) {
+        case Sing: {
+            return "sing";
+            break;
+        }
+        case Game: {
+            return "game";
+            break;
+        }
+        case Exercise: {
+            return "exercise";
+            break;
+        }
+        default:
+            return NULL;
+            break;
+    }
+    
 }

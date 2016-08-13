@@ -17,38 +17,32 @@ int main(int argc, const char * argv[]) {
     getWordFromUser(name, "What's your name? 30 characters or less.\n\n", 30);
     printf("Hello, %s. We're going to play Madlibs.", name);
     
-    char colorToString[10] = {[ 0 ... 9] = '\0'};
+    char* colorToString = "loremipsum";
     
     printf("Choose an adjective.");
     
-    wordToString(WordAdjGreen, colorToString);
-    printf("%d:, %s\n\n", WordAdjGreen, colorToString);
+    colorToString = AdjToString(Green);
+    printf("%d: %s\n\n", Green, colorToString);
+    colorToString = AdjToString(Red);
+    printf("%d: %s\n\n", Red, colorToString);
+    colorToString = AdjToString(Orange);
+    printf("%d: %s\n\n", Orange, colorToString);
     
-    wordToString(WordAdjRed, colorToString);
-    printf("%d:, %s\n\n", WordAdjRed, colorToString);
     
-    wordToString(WordAdjOrange, colorToString);
-    printf("%d:, %s\n\n", WordAdjOrange, colorToString);
+    colorToString = NounToString(Empanadas);
+    printf("%d: %s\n\n", Empanadas, colorToString);
+    colorToString = NounToString(Pizza);
+    printf("%d: %s\n\n", Pizza, colorToString);
+    colorToString = NounToString(Salad);
+    printf("%d: %s\n\n", Salad, colorToString);
     
-    wordToString(WordNounEmpanadas, colorToString);
-    printf("%d:, %s\n\n", WordNounEmpanadas, colorToString);
     
-    wordToString(WordNounPizza, colorToString);
-    printf("%d:, %s\n\n", WordNounPizza, colorToString);
-    
-    wordToString(WordNounSalad, colorToString);
-    printf("%d:, %s\n\n", WordNounSalad, colorToString);
-    
-    wordToString(WordVerbExercise, colorToString);
-    printf("%d:, %s\n\n", WordVerbExercise, colorToString);
-    
-    wordToString(WordVerbGame, colorToString);
-    printf("%d:, %s\n\n", WordVerbGame, colorToString);
-    
-    wordToString(WordVerbSing, colorToString);
-    printf("%d:, %s\n\n", WordVerbSing, colorToString);
-    
-    printf("%s\n\n", colorToString);
+    colorToString = VerbToString(Exercise);
+    printf("%d: %s\n\n", Exercise, colorToString);
+    colorToString = VerbToString(Game);
+    printf("%d: %s\n\n", Game, colorToString);
+    colorToString = VerbToString(Sing);
+    printf("%d: %s\n\n", Sing, colorToString);
     
     return 0;
 }
