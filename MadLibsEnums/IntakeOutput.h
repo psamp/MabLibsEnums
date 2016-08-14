@@ -12,6 +12,7 @@
 #include <stdio.h>
 
 void getWordFromUser(char *destination, char prompt[], int wordMaxLength);
+void getNumberFromUser(int *destination, char prompt[], int minNumberValue, int maxNumberValue);
 void promptUserWithOutVariables(char message[]);
 
 #endif /* IntakeOutput_h */

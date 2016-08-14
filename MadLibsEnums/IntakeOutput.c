@@ -14,7 +14,7 @@ void getWordFromUser(char *destination, char prompt[], int maxWordLength) {
     int numberOfItemsScanned = 0;
     unsigned long stringLength = 0;
     
-    while (numberOfItemsScanned != 1 && (stringLength <= 0 || stringLength > maxWordLength)) {
+    while (numberOfItemsScanned != 1 || (stringLength <= 0 || stringLength > maxWordLength)) {
         printf("%s", prompt);
         fpurge(stdin);
         
@@ -29,12 +29,12 @@ void promptUserWithOutVariables(char message[]) {
     printf("%s", message);
 }
 
-void getNumberFromUser(int *destination, char prompt[], int maxNumberValue, int minNumberValue) {
+void getNumberFromUser(int *destination, char prompt[], int minNumberValue, int maxNumberValue) {
     
     int numberOfItemsScanned = 0;
     int number = -1;
     
-    while (numberOfItemsScanned != 1 && (number < minNumberValue || number > maxNumberValue)) {
+    while (numberOfItemsScanned != 1 || (number > maxNumberValue || number < minNumberValue)) {
         printf("%s", prompt);
         fpurge(stdin);
         
